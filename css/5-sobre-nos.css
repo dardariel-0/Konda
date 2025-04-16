@@ -1,0 +1,69 @@
+.sobre-nos {
+  background-image: url("/img/background-1.svg");
+  padding: 40px 0px;
+}
+.banner-2 {
+  display: grid;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 300px;
+  place-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.background-2 {
+  background-image: url("/img/banners/banner-2.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.background-2:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  filter: blur(2px);
+}
+.botao-sobre {
+  color: var(--cor-01);
+  position: relative;
+  position: absolute;
+}
+.botao-sobre:hover {
+  letter-spacing: 8px;
+  transition: 0.3s;
+}
+.botao-sobre:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--cor-s2);
+  bottom: -4px;
+  position: absolute;
+}
+@media (max-width: 1250px) {
+  .banner-2 {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 900px) {
+  .banner-2 {
+    height: 180px;
+  }
+  .sobre-nos {
+    padding: 20px 0px;
+  }
+}
+@media (max-width: 550px) {
+  .sobre-nos {
+    padding: 0px;
+  }
+  .banner-2 {
+    margin: 0px;
+    border-radius: 0px;
+    height: 140px;
+  }
+}

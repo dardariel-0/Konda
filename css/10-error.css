@@ -1,0 +1,9 @@
+.construcao {
+  display: flex;
+  padding: 100px;
+  height: 400px;
+  background-color: #dedede;
+}
+.img {
+  width: 10%;
+}

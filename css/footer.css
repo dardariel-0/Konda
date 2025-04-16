@@ -1,0 +1,171 @@
+footer {
+  background-color: var(--cor-12);
+  height: 100%;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+.logo-footer-clique {
+  display: inline-block;
+  max-width: 132px;
+  place-self: center;
+}
+.infos-footer {
+  display: flex;
+  gap: 80px;
+}
+.text-list {
+  display: grid;
+  gap: 32px;
+  place-content: start;
+}
+
+.icones-contato {
+  display: flex;
+  gap: 23px;
+}
+footer p {
+  max-width: 40ch;
+  color: var(--cor-04);
+}
+.listas {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 80px;
+  margin-right: 53px;
+}
+.list-1,
+.list-2 {
+  display: grid;
+  gap: 28px;
+  place-content: start;
+}
+.list-titulo {
+  color: var(--cor-p2);
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-list a {
+  color: var(--cor-02);
+}
+.footer-list a:hover {
+  color: var(--cor-s2);
+}
+.email {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  place-content: start;
+}
+.email-input {
+  display: flex;
+  gap: 8px;
+}
+.input {
+  height: 40px;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  background-color: var(--cor-11);
+}
+
+#footer .button {
+  padding: 13px 18px;
+  max-width: 100px;
+  margin: 0px;
+  height: 14px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.phanter {
+  display: block;
+  width: 50%;
+  justify-self: center;
+}
+@media (max-width: 1250px) {
+  .footer-container {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .listas {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .phanter {
+    display: none;
+  }
+  .email {
+    grid-template-rows: auto auto;
+    place-items: start;
+  }
+  .infos-footer {
+    gap: 32px;
+  }
+}
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-rows: 80px 1fr;
+  }
+  .logo-footer {
+    width: 100%;
+  }
+  .infos-footer {
+    display: grid;
+    max-width: 400px;
+    justify-self: center;
+  }
+  .text-list {
+    order: -1;
+    gap: 20px;
+    justify-self: center;
+    justify-items: center;
+  }
+
+  .icones-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .icones-contato img {
+    width: 36px;
+  }
+  footer p {
+    max-width: 50ch;
+  }
+
+  .listas {
+    margin: 0px;
+    margin-bottom: 60px;
+  }
+  .list-1,
+  .list-2 {
+    gap: 10px;
+  }
+  .footer-list {
+    gap: 10px;
+  }
+  .input {
+    width: 100%;
+  }
+  .email {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  footer p {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  footer {
+    height: 420px;
+  }
+}

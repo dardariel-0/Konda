@@ -1,0 +1,129 @@
+.sidebar-produtos {
+  display: none;
+}
+
+.slide {
+  height: 100vh;
+  width: 280px;
+  top: 0;
+  left: 0;
+  background-color: var(--cor-03);
+  background-image: url("/img/background-1.svg");
+  transition: 0.5s ease;
+  transform: translateX(-280px);
+  z-index: 5;
+  touch-action: none;
+  position: fixed;
+  top: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.toggle {
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  z-index: 3;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.close-menu {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  z-index: 3;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.toggle-title,
+.toggle-title-2 {
+  top: 30px;
+  left: 20px;
+  margin-bottom: 52px;
+  color: var(--cor-12);
+  cursor: pointer;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.toggle-title::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("/img/icones/chevron-down.svg");
+  position: absolute;
+  transition: 0.3s ease;
+  left: 104px;
+  top: -2px;
+}
+.toggle-title-2::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("/img/icones/chevron-down.svg");
+  position: absolute;
+  transition: 0.3s ease;
+  left: 146px;
+  top: -2px;
+}
+
+.submenu {
+  transition: 0.3s ease;
+  transform: translateY(-300px);
+  display: none;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0px 10px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.submenu a {
+  font-size: 1rem;
+  color: var(--cor-12);
+  letter-spacing: 0;
+  text-transform: capitalize;
+  padding: 12px;
+  padding-left: 20px;
+  display: block;
+  height: 100%;
+}
+.submenu a:hover {
+  background-color: var(--cor-s2);
+  color: var(--cor-01);
+  padding-left: 30px;
+  transition: 0.3s ease;
+}
+input:checked ~ .submenu {
+  opacity: 100;
+  transform: translateX(0px);
+  display: flex;
+}
+input:checked
+  ~ .submenu:not(.slide-carrinho .submenu, .pag-selecionar .submenu) {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+input:checked ~ .toggle-title::after {
+  transform: rotate(180deg);
+}
+input:checked ~ .toggle-title-2::after {
+  transform: rotate(180deg);
+}
+
+.slide.ativo {
+  transform: translateX(0);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 800px) {
+  .sidebar-produtos {
+    display: flex;
+  }
+}

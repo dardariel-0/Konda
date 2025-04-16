@@ -1,0 +1,36 @@
+.breadcrumb {
+  display: flex;
+  padding: 22px 16px 0px 24px;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "fira code", sans-serif;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+@media (max-width: 550px) {
+  .breadcrumb {
+    margin: 0 10px;
+    padding-left: 0;
+  }
+}
+
+.breadcrumb li + li:before {
+  padding: 8px;
+  color: var(--cor-08);
+  content: "•";
+}
+
+.breadcrumb li {
+  color: var(--cor-11);
+  font-weight: 700;
+}
+
+.breadcrumb li a {
+  color: var(--cor-08);
+  text-decoration: none;
+  font-weight: 500;
+}
+.breadcrumb li a:hover {
+  color: var(--cor-11);
+}

@@ -1,0 +1,25 @@
+@import "/css/0-global.css";
+@import "/css/1-header.css";
+@import "/css/1.1-menu-toggle.css";
+@import "/css/1.2-carrinho.css";
+@import "/css/2-nova-colecao.css";
+@import "/css/3-separador.css";
+@import "/css/4-destaques.css";
+@import "/css/2.1-new-colection.css";
+@import "/css/5-sobre-nos.css";
+@import "/css/5.1-about-us.css";
+@import "/css/6-login.css";
+@import "/css/footer.css";
+@import "/css/10-error.css";
+@import "/css/11-select-product.css";
+@import "/css/12-entrega.css";
+@import "/css/13-finalizar-compra.css";
+
+/* utilitarios */
+@import "/css/utilitarios/typho.css";
+@import "/css/utilitarios/colors.css";
+@import "/css/utilitarios/utilities.css";
+@import "/css/utilitarios/select-1.css";
+@import "/css/utilitarios/select-drop-js.css";
+@import "/css/utilitarios/form.css";
+@import "/css/utilitarios/termos.css";

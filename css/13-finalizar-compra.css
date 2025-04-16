@@ -1,0 +1,159 @@
+.list-dados-comprador {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 20px 0 52px 0;
+}
+.dados-comprador {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.dados-comprador::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--cor-03);
+  bottom: -16px;
+}
+.dados-comprador img {
+  width: 20px;
+  align-self: self-start;
+}
+.icon-texto {
+  display: flex;
+  gap: 20px;
+}
+.icon-texto span {
+  color: var(--cor-10);
+}
+.dados-comprador a {
+  text-align: right;
+  font-weight: 600;
+  color: var(--cor-09);
+}
+.dados-comprador a:hover {
+  color: var(--cor-12);
+}
+.pag-selecionar input:not(.submenu input) {
+  visibility: hidden;
+  display: none;
+}
+.pag-selecionar .open-option span {
+  text-transform: none;
+  font-weight: 500;
+  color: var(--cor-12);
+}
+
+.pag-selecionar .submenu {
+  gap: 12px;
+  margin: 0px;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 20px 40px;
+  background-color: var(--cor-02) !important;
+  border: 1px solid #e1e1e1;
+}
+
+.vencimento {
+  display: flex;
+  gap: 8px;
+}
+.vencimento input {
+  width: 100%;
+}
+
+.pag-selecionar .submenu input {
+  height: 40px;
+  background-color: var(--cor-01);
+  margin: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+}
+
+/* menu quantidade de parcelas */
+.parcelas .select-button {
+  background-color: var(--cor-01);
+  border-color: var(--cor-10);
+  border-radius: 8px;
+  border: 2px solid var(--cor-09);
+}
+.main-entrega .custom-select {
+  max-width: none;
+}
+
+.parcelas .select-dropdown input:checked ~ label {
+  background-color: var(--cor-05);
+}
+
+.cartoes-aceitos {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+.cartoes-aceitos span {
+  color: var(--cor-12);
+  font-weight: 500 !important;
+}
+
+.list-cartoes {
+  display: flex;
+  gap: 8px;
+}
+.list-cartoes img {
+  max-width: 36px;
+}
+.pix-info {
+  display: flex;
+  flex-direction: column;
+}
+.pix-info span,
+.qr-info span {
+  color: var(--cor-12);
+  font-weight: 500 !important;
+}
+.qr-icon {
+  width: 100px;
+}
+.qr-info {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+.entrega-10 {
+  margin-bottom: 32px;
+  position: relative;
+}
+.entrega-10::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--cor-02);
+  bottom: -206px;
+}
+
+.cel-envio {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.cel-envio p:not(.popup-c) {
+  color: var(--cor-s2);
+}
+
+@media (max-width: 900px) {
+  .pag-selecionar .submenu:not(.parcelas .submenu) {
+    padding: 20px;
+  }
+}
+@media (max-width: 670px) {
+  .pag-selecionar .submenu:not(.parcelas .submenu) {
+    padding: 20px;
+  }
+}

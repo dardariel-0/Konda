@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+
+  <title>Termos de Uso</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="header-container">
+      <ul class="header-list-1">
+        <li>
+          <div class="dropdown">
+            <a class="link-title font-1-m" href="/">produtos</a>
+            <div class="dropdown-content">
+              <ul class="dropdown-list font-1-pp">
+                <li><a href="/new-collection/camisas.html">Camisas</a></li>
+                <li><a href="/new-collection/moletom.html">Jaquetas</a></li>
+                <li><a href="/new-collection/prints.html">Prints</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="link-title font-1-m" href="/">Lançamentos</a>
+            <div class="dropdown-content">
+              <ul class="dropdown-list font-1-pp">
+                <li><a href="/new-collection/new-collection.html">Drop My Hero Academy</a></li>
+                <li><a href="/error/error.html">Drop Claymore</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="sidebar-produtos">
+        <img class="toggle" src="/img/icones/hamburguer.svg" alt="">
+        <div class="slide">
+          <div> <input id="check01" type="checkbox" name="menu" />
+            <label class="toggle-title font-1-m1-b" for="check01">produtos
+            </label>
+            <ul class="submenu font-1-m1">
+              <li><a href="/new-collection/camisas.html">Camisas</a></li>
+              <li><a href="/new-collection/moletom.html">Jaquetas</a></li>
+
+              <li><a href="/new-collection/prints.html">Prints</a></li>
+            </ul>
+          </div>
+          <div> <input id="check02" type="checkbox" name="menu" />
+            <label class="toggle-title-2 font-1-m1-b" for="check02">lançamentos
+            </label>
+            <ul class="submenu font-1-m1">
+              <li><a href="/new-collection/new-collection.html">Drop My Hero Academy</a></li>
+              <li><a href="/error/error.html">Drop Claymore</a></li>
+
+            </ul>
+          </div>
+
+          <img class="close-menu" src="/img/icones/x.svg" alt="">
+
+        </div>
+      </div>
+      <a class="logo" href="/index.html">
+        <img class="logo-img" src="/img/logo/logo.svg" alt="Konda Logo">
+      </a>
+      <ul class="header-list-2">
+        <li><a href="/login/login.html" "><img src=" /img/icones/icon-perfil.svg" alt="Perfil"></a></li>
+
+        <li>
+          <div class="carrinho">
+            <input type="checkbox" id="check-car" class="close-car-button">
+            <input type="checkbox" id="checkbox-car" name="car">
+            <label for="check-car" class="icon-carrinho"><img src="/img/icones/icon-carrinho.svg" alt=""></label>
+
+            <div class="slide-carrinho">
+              <input type="checkbox" id="check-car" class="close-car-button">
+              <label for="check-car">
+                <div class="toggle-car">
+                  <span class="top-line common"></span>
+                  <span class="bot-line common"></span>
+                </div>
+              </label>
+              <h2 class="title-car font-1-m1">seu carrinho</h2>
+              <div class="product-card">
+                <div class="product-card-img">
+                  <img src="/img/carrinho/jaqueta.png" alt="">
+                </div>
+                <div class="product-card-infos">
+                  <h3 class="font-2-gg">Jaqueta - Kyyyoto</h3>
+                  <div class="counter-card">
+                    <div class="btn">+</div>
+                    <div class="count">1</div>
+                    <div class="btn">-</div>
+                  </div>
+                  <span class="price font-2-g1">R$ 140,00</span>
+                  <a class="font-2-g" href="#">Remover</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-img">
+                  <img src="/img/carrinho/postal-tanjiro.png" alt="">
+                </div>
+                <div class="product-card-infos">
+                  <h3 class="font-2-gg">Brinde - Postal Tanjiro</h3>
+                  <div class="counter-card">
+                    <div class="btn">+</div>
+                    <div class="count">1</div>
+                    <div class="btn">-</div>
+                  </div>
+                  <span class="price font-2-g1">R$ 0,00</span>
+                  <a class="font-2-g" href="#">Remover</a>
+                </div>
+              </div>
+
+              <div class="comprar">
+                <span class="aviso-frete font-2-g1-b">Frete Grátis em compras a partir de R$ 250,00</span>
+                <div class="subtotal">
+                  <p class="font-2-g">Subtotal (sem frete):</p>
+                  <span class="font-2-gg">R$ 140,00</span>
+                </div>
+
+
+                <div class="select-option-drop">
+                  <button class="open-option" aria-expanded="false" aria-controls="open1">
+                    <img src="/img/icones/envio.svg" alt="">
+                    <span class="envio-title font-1-m">formas de envio</span>
+                    <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
+                  </button>
+
+                  <div id="open1" class="options">
+                    <input type="radio" id="sedex" name="tipo" value="sedex">
+                    <label for="sedex" class="font-2-g">
+                      <p>Sedex</p> <span>R$19,90</span>
+                    </label>
+
+                    <input type="radio" id="correios" name="tipo" value="correios">
+                    <label for="correios" class="font-2-g">
+                      <p>Correios</p> <span>R$29,90</span>
+                    </label>
+                  </div>
+
+                </div>
+
+                <div class="cep">
+                  <input class="input-cep input-form-01" type="text" placeholder="CEP">
+                  <a class="font-2-g" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noopener noreferrer">Não sei meu CEP</a>
+                </div>
+                <div class="total">
+                  <span class="font-1-g1">TOTAL:</span>
+                  <div>
+                    <p class="price-total font-2-xl">R$ 140,00</p>
+                    <p class="parcelamento font-2-g">ou até <strong>12x</strong> de <strong>R$14,00</strong></p>
+                  </div>
+                </div>
+
+                <a class="button" href="/entrega/entrega.html">iniciar compra</a>
+                <a class="mais-produtos font-2-g" href="/new-collection/new-collection.html">Ver mais produtos</a>
+              </div>
+            </div>
+
+            </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner-nova">
+    <h1 class="font-1-g">Termos de uso</h1>
+  </div>
+
+  <main class="main" id="collection">
+    <ul class="breadcrumb">
+      <li><a class="crumb" href="/index.html">Início</a></li>
+      <li>Termos de uso</li>
+    </ul>
+    <div class="termos-container font-2-g">
+      <h1 class="font-1-m">TERMOS E CONDIÇÕES DE USO E DE COMPRA E VENDA</h1>
+      <p class="primeiro-p">Esses termos e condições de uso e compra e venda aplicam-se aos serviços prestados por <strong>Konda</strong>, por meio do site <strong>Konda</strong>, com o seguinte endereço: www.konda.com</p>
+      <div class="topicos">
+        <h2 class="font-1-m">1. DO OBJETO</h2>
+        <p>O site <strong>Konda</strong> caracteriza-se pela prestação dos seguintes serviços, incluindo a venda à distância e por meio eletrônico de produtos e de serviços:</p>
+
+        <p>Disponibilizamos artigos de vestuário e moda, com distribuição para todo o país via Correios. Oferecemos produtos nacionais adquiridos dentro de território nacional.</p>
+      </div>
+      <div class="topicos">
+        <h2 class="font-1-m">2. DA ACEITAÇÃO DOS TERMOS E CONDIÇÕES DE USO E DE COMPRA E VENDA</h2>
+        <p>Todos aqueles que desejarem ter acesso aos serviços ofertados através do site <strong>Konda</strong> deverão primeiramente, se informar sobre as regras que compõem o presente instrumento, as quais ficarão disponíveis para pronta e ampla consulta, em link direto no próprio site.</p>
+
+        <p>Ao utilizar o site <strong>Konda</strong>, o usuário aceita integralmente as presentes normas e compromete-se a observá-las, sob risco de aplicação de penalidades cabíveis. Antes de iniciar qualquer navegação no site, o usuário deverá cientificar-se de eventuais modificações ou atualizações ocorridas neste termo.</p>
+        <p>Caso não concorde com quaisquer das regras aqui descritas, o usuário deve, imediatamente, abster-se de utilizar o serviço. Se for de seu interesse, poderá, ainda, entrar em contato com o serviço de atendimento ao cliente, para apresentar-lhe as suas ressalvas.</p>
+      </div>
+      <div class="topicos">
+        <h2 class="font-1-m">3. DA NAVEGAÇÃO</h2>
+        <p>O editor do site <strong>Konda</strong> se compromete a utilizar de todas as soluções técnicas à sua disposição para permitir o acesso ao serviço 24 (vinte e quatro) horas por dia, 7 (sete) dias por semana. Entretanto, ele poderá, a qualquer momento, interromper, limitar ou suspender o acesso ao site ou a algumas de suas páginas, a fim de realizar atualizações, modificações de conteúdo ou qualquer outra ação julgada necessária para o seu bom funcionamento.</p>
+
+        <p>Os presentes termos e condições de uso e de compra e venda se aplicam a todas as extensões do site <strong>Konda</strong> em redes sociais e comunidades, tanto as já existentes, quanto aquelas ainda a serem implementadas.</p>
+      </div>
+
+      <div class="topicos">
+        <h2 class="font-1-m">4. DA GESTÃO DO SITE</h2>
+        <p>Para a boa gestão, o editor do site <strong>Konda</strong> poderá, a qualquer momento:</p>
+
+        <ul>
+          <li>suspender, interromper ou limitar o acesso a todo ou parte do site a uma categoria específica de internautas;</li>
+          <li>remover toda informação que possa perturbar o funcionamento do site ou que esteja em conflito com normas de Direito brasileiro ou de Direito internacional;</li>
+          <li>suspender o site, a fim de realizar atualizações e modificações.</li>
+        </ul>
+      </div>
+
+      <div class="topicos">
+        <h2 class="font-1-m">5. Do cadastro</h2>
+        <p>Os serviços disponibilizados no site <strong>Konda</strong> apenas poderão ser acessados por pessoas plenamente capazes, conforme o Direito brasileiro.</p>
+
+        <p>Ao usuário, será permitido manter apenas uma conta junto ao site <strong>Konda</strong>. Contas duplicadas serão automaticamente desativadas pelo editor do site, sem prejuízo de demais penalidades cabíveis.</p>
+
+        <p>Para o devido cadastramento junto aos serviço, o usuário deverá fornecer integralmente os dados requeridos. Todas as informações fornecidas pelo usuário devem ser precisas, verdadeiras e atualizadas.</p>
+        <p>O usuário deverá fornecer um endereço de e-mail válido, através do qual o site realizará todos os contatos necessários. Todas as comunicações enviadas para o referido endereço serão consideradas lidas pelo usuário, que se compromete, assim, a consultar regularmente suas mensagens recebidas e a respondê-las em prazo razoável.</p>
+        <p>Após a confirmação de seu cadastro, o usuário possuirá um login (apelido) e uma senha pessoais, que deverão ser por ele utilizados para o acesso a sua conta no site <strong>Konda</strong>. Estes dados de conexão não poderão ser informados pelo usuário a terceiros, sendo de sua inteira responsabilidade o uso que deles seja feito. O usuário compromete-se a comunicar imediatamente à loja quaisquer atividades suspeitas ou inesperadas em sua conta.</p>
+      </div>
+
+      <div class="topicos">
+        <h2 class="font-1-m">6. Das responsabilidades</h2>
+        <p>O editor se responsabilizará pelos defeitos ou vícios encontrados nos serviços pelo site Alternazero, desde que tenha lhes dado causa. Defeitos ou vícios técnicos ou operacionais originados no próprio sistema do usuário não serão de responsabilidade do editor.</p>
+
+        <p>O editor responsabiliza-se apenas pelas informações que forma por ele diretamente divulgadas. Quaisquer informações incluídas pelos usuários, tais como em comentários e em perfis pessoais, serão de inteira responsabilidade dos próprios.</p>
+
+        <p>O usuário é responsável, ainda:</p>
+        <ul>
+          <li>pela correta utilização do site e de seus serviços, prezando pela boa convivência, pelo respeito e pela cordialidade no relacionamento com os demais usuários (no site e nas demais redes sociais ligadas a ele);</li>
+          <li>pelo cumprimento das regras contidas neste instrumento, bem como normas de Direito nacional e de Direito internacional;</li>
+          <li>pela proteção dos dados de acesso à sua conta (login e senha).</li>
+        </ul>
+        <p>O editor não será responsável:</p>
+
+        <ul>
+          <li>pelas características intrínsecas da internet, principalmente relativas à confiabilidade e à procedência das informações circulando nesta rede;</li>
+          <li>pelos conteúdos ou atividades ilícitas praticadas através de seu site.</li>
+        </ul>
+      </div>
+
+      <div class="topicos">
+        <h2 class="font-1-m">7. dos links externos</h2>
+        <p>O site Alternazero pode conter links externos redirecionando o usuário para outras páginas da internet, sobre os quais o editor não exerce controle. Apesar das verificações prévias e regulares realizadas pelo editor, ele se isenta de qualquer responsabilidade sobre conteúdo encontrado nestes sites e serviços.</p>
+      </div>
+      <div class="topicos">
+        <h2 class="font-1-m">8. dos preços</h2>
+        <p>O vendedor se reserva o direito de modificar os preços dos produtos e serviços a qualquer momento, publicando-os no site Alternazero.</p>
+
+        <p>Serão aplicados às tarifas em vigor no momento do pedido, sob reserva de disponibilidade de produtos e serviços nesta data.</p>
+        <p>Os preços serão indicados em reais e não incluirão as taxas de entrega, as quais virão especificadas à parte e serão informadas ao cliente antes da realização do pedido.</p>
+        <p>O montante total do pedido, incluindo todas as taxas, será indicado antes da validação final do pedido.</p>
+      </div>
+      <div class="topicos">
+        <h2 class="font-1-m">9. do pagamento</h2>
+        <p>O pagamento do pedido deverá ser realizado à vista ou a prazo, através dos seguintes meios:</p>
+
+        <ul>
+          <li>Cartão de crédito, PIX e Boleto Bancário via Mercado Pago.</li>
+        </ul>
+      </div>
+      <div class="topicos">
+        <h2 class="font-1-m">10. da entrega</h2>
+        <p>O prazo de entrega dos produtos ou serviços adquiridos no site <strong>Konda</strong> será informado no momento do pedido, em dias úteis. O tempo para a entrega é calculada conforme a região e a preparação do pedido.</p>
+        <p>Após a finalização do pedido, não será possível alterar a forma de pagamento, o endereço de entrega ou as condições de entrega do produto, tais como prioridade ou adiantamento.</p>
+        <p>As entregas serão realizadas por meio do serviço disponibilizado pelos Correios, no qual será informada o número do rastreamento da encomenda para acompanhamento via internet.</p>
+      </div>
+      <div class="topicos">
+        <h2 class="font-1-m">11. das trocas e devoluções</h2>
+        <p>A política de trocas e devoluções do site <strong>Konda</strong> será regida conforme o Código de Defesa do Consumidor (Lei Federal n.8.078 de 11 de setembro de 1990).</p>
+        <p>Afora a hipótese de arrependimento do cliente, a troca ou a devolução dos produtos e serviços adquiridos apenas será realizada mediante a verificação de vícios de qualidade e quantidade que os tornem impróprios ou inadequados ao consumo a que se destinam ou que lhes diminuam o valor. </p>
+        <p>Também poderão ser trocados ou devolvidos produtos que apresentem disparidade com as indicações constantes do recipiente, da embalagem, rotulagem ou mensagem publicitária, respeitadas as variações decorrentes de sua natureza.</p>
+        <p>O usuário deverá comunicar o vendedor, por meio do seu serviço de atendimento, tão logo constate o vício no produto ou serviço adquirido. Se, no prazo máximo de 7 (sete) dias, não for possível resolver o vício ou, independente do produto ou serviço, diminuir-lhe o valor ou se tratar de produto ou serviço essencial, o cliente poderá optar pela substituição do produto por outro de mesma espécie ou pela reexecução do serviço, pela devolução da quantia paga ou pelo abatimento proporcional ao preço.</p>
+      </div>
+      <div class="topicos">
+        <h2 class="font-1-m">12. do atendimento ao usuário</h2>
+        <p>Em caso de dúvidas, sugestões ou problemas com a utilização do site <strong>Konda</strong>, o usuário poderá contatar diretamente o seus serviço de atendimento, através do endereço de e-mail: contato@konda.com bem como do telefone: +55 00 00000-0000. Estes serviços de atendimento ao usuário estarão disponíveis ao usuário nos seguintes dias e horários:</p>
+        <div>
+          <p>Seja bem-vindo(a)</p>
+          <p>A equipe do site <strong>Konda</strong> lhe deseja uma ótima experiência!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer id="footer">
+    <div class="footer-container">
+      <a class="logo-footer-clique" href="/index.html"> <img class="logo-footer" src="/img/logo/logo-verde.svg" alt=""></a>
+      <div class="infos-footer">
+        <div class="listas">
+          <div class="list-1">
+            <h3 class="list-titulo font-1-m1">Categorias</h3>
+            <ul class="footer-list font-2-m">
+              <li><a href="/new-collection/camisas.html">Camisas</a></li>
+              <li><a href="/new-collection/moletom.html">Jaquetas</a></li>
+              <li><a href="/new-collection/prints.html">Diversos</a></li>
+              <li><a href="/new-collection/new-collection.html">Lançamento</a></li>
+            </ul>
+          </div>
+          <div class="list-2">
+            <h3 class="list-titulo font-1-m1">informações</h3>
+            <ul class="footer-list font-2-m">
+              <li><a href="/termos/como-cuidar.html">Como cuidar da sua peça</a></li>
+              <li><a href="/termos/como-medir.html">Como medir</a></li>
+              <li><a href="/termos/politica-de-troca.html">Política de Troca & Devolução</a></li>
+              <li><a href="/termos/politica-de-entrega.html">Política de entrega</a></li>
+              <li><a href="/termos/termos-uso.html">Termos de uso</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-list font-2-g">
+          <p>At vero eos et accusamus et iusto odio dignis ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati Et harum quidem rerum tempore.</p>
+
+          <ul class="icones-contato">
+            <li><a href="/"><img src="/img/icones/Whtsapp.svg" alt="Whatsapp"></a></li>
+            <li><a href="https://www.instagram.com/dardariel/"><img src="/img/icones/Instagram.svg" alt="Instagram"></a></li>
+            <li><a href="/"><img src="/img/icones/Email.svg" alt="Email"></a></li>
+            <li><a href="/"><img src="/img/icones/Pin.svg" alt="Pinterest"></a></li>
+            <li><a href="/"><img src="/img/icones/Facebook.svg" alt="Facebook"></a></li>
+          </ul>
+        </div>
+        <div class="email">
+          <h3 class="list-titulo font-1-m1">receba atualizações</h3>
+          <div class="email-input">
+            <input class="input" type="text" />
+            <a class=button href="/">inscrever</a>
+          </div>
+          <img class="phanter" src="/img/footer/phanter.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="/js/select-open.js"></script>
+</body>
+
+</html>

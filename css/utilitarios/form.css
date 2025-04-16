@@ -1,0 +1,63 @@
+.form-01 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.duo-line {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+.duo-line input {
+  width: 100%;
+}
+.input-form-01 {
+  min-width: 100px;
+  max-width: 100%;
+  min-height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--cor-12);
+  padding-left: 12px;
+}
+.input-form-01:focus {
+  outline: none;
+  border-color: var(--cor-s2);
+  background-color: var(--cor-01);
+  box-shadow: 0 0 0 2px var(--cor-p1);
+}
+
+.input-form-01::placeholder {
+  padding-left: 0px;
+  color: var(--cor-08);
+  font: 500 0.775rem/1.3 "Fira Sans", sans serif;
+}
+
+.input-form-01:hover {
+  border: 1px solid var(--cor-s2);
+}
+
+.input-line {
+  display: grid;
+  gap: 4px;
+}
+
+.input-line input {
+  min-height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--cor-10);
+}
+.input-line:hover input {
+  border: 1px solid var(--cor-s3);
+}
+
+.sugestao {
+  padding-top: 10px;
+}
+
+@media (max-width: 450px) {
+  #login .input-line,
+  #create-acc .input-line {
+    min-width: 260px;
+  }
+}

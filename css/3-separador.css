@@ -1,0 +1,25 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.separador {
+  overflow: hidden;
+  background-color: #0e0e0e;
+}
+.letreiro-slide {
+  display: flex;
+  gap: 100px;
+  animation: 30s slide infinite linear;
+}
+.letreiro-slide:hover {
+  animation-play-state: paused;
+}
+.letreiro-slide img {
+  max-height: 14px;
+  display: block;
+  margin: 8px 0;
+}

@@ -1,0 +1,52 @@
+html {
+  scrollbar-width: none;
+}
+body {
+  margin: 0px;
+  background-color: var(--cor-04);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.button {
+  margin-top: 18px;
+  width: 100%;
+  font-family: "Josefin sans", arial, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--cor-01);
+  padding: 10px 0;
+  text-align: center;
+  background-image: linear-gradient(#ff00a4, #ca0082);
+  overflow: hidden;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-image: linear-gradient(#ca0082, #ff00a4);
+}

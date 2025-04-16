@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <title>Finalizar compra</title>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="header-container">
+      <a class="logo" href="/index.html">
+        <img class="logo-img" src="/img/logo/logo.svg" alt="Konda Logo">
+      </a>
+    </nav>
+  </header>
+
+  <main class="main-entrega">
+    <div class="entrega-container-geral">
+      <section class="container-form">
+        <ul class="breadcrumb">
+          <li><a class="crumb" href="/index.html">Início</a></li>
+          <li><a class="crumb" href="/index.html">Carrinho de compras</a></li>
+          <li><a class="crumb" href="/entrega/entrega.html">Entrega</a></li>
+          <li>Pagamento</li>
+        </ul>
+        <h2 class="font-1-m1">dados do remetente</h2>
+        <div>
+          <ul class="list-dados-comprador font-2-g">
+            <li>
+              <div class="dados-comprador">
+                <div class="icon-texto"><img src="/img/finalizacao/email-2.svg" alt=""><span>email-example@gmail.com</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="dados-comprador">
+                <div class="icon-texto">
+                  <img src="/img/finalizacao/local-2.svg" alt="">
+                  <span>Rua Abel Costa Nº 203 <br>CEP 58239-070 <br>Campina Grande, Paraíba - (83) 99999-9999</span>
+                </div>
+                <a href="/error/error.html">Alterar</a>
+              </div>
+            </li>
+            <li>
+              <div class="dados-comprador">
+                <div class="icon-texto">
+                  <img src="/img/icones/envio.svg" alt="">
+                  <span>Chega segunda-feira 15/06 <br>PAC Promocional <br>R$ 25,00</span>
+                </div>
+                <a href="/error/error.html">Alterar</a>
+              </div>
+            </li>
+          </ul>
+          <div class="entrega-10 font-2-g">
+            <h2 class="font-1-m1">forma de pagamento</h2>
+            <div class="pag-selecionar">
+              <input id="check-envio04" type="checkbox" name="menu" />
+              <label class="open-option" for="check-envio04">
+                <img src="/img/finalizacao/cartao.svg" alt="">
+                <span class="envio-title">Cartão de crédito</span>
+                <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
+              </label>
+              <div class="submenu">
+                <input type="text" id="numeroC" name="numeroC" placeholder="Número do cartão">
+                <input type="text" id="nomeC" name="nomeC" placeholder="Nome impresso no cartão">
+
+                <div class="vencimento">
+                  <input class="data-input" id="dataC" name="dataC" type="date">
+                  <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                </div>
+
+
+                <div class="custom-select parcelas">
+
+                  <button class="select-button" aria-expanded="false" aria-controls="select-dropdown">
+
+                    <span class="selected-value">Parcelas</span>
+
+                    <img class="img" src="/img/icones/chevron-down.svg" alt="">
+                  </button>
+
+                  <ul class="select-dropdown font-2-g" id="select-dropdown">
+                    <li>
+                      <input type="radio" id="1x" name="parcelas" />
+                      <label for="1x">1x de R$165,00 sem juros</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="2x" name="parcelas" />
+                      <label for="2x">2x de R$82,50 sem juros</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="10x" name="parcelas" />
+                      <label for="10x">10x de R$18,00 com juros</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="12x" name="parcelas" />
+                      <label for="12x">12x de R$19,00 com juros </label>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <input type="number" placeholder="CPF ou CNPJ">
+
+                <div class="cartoes-aceitos">
+                  <span>Cartões aceitos por <strong>Mercado Pago</strong>:</span>
+                  <div class="list-cartoes">
+                    <img src="/img/finalizacao/visa.svg" alt="">
+                    <img src="/img/finalizacao/mastercard.svg" alt="">
+                    <img src="/img/finalizacao/amex.svg" alt="">
+                    <img src="/img/finalizacao/diners.svg" alt="">
+                    <img src="/img/finalizacao/visa.svg" alt="">
+                    <img src="/img/finalizacao/elo.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pag-selecionar">
+              <input id="check-envio05" type="checkbox" name="menu" />
+              <label class="open-option" for="check-envio05">
+                <img src="/img/finalizacao/pix.svg" alt="">
+                <span class="envio-title">PIX</span>
+                <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
+              </label>
+              <div class="submenu">
+                <div class="qr-info"><img class="qr-icon" src="/img/finalizacao/qr-code.svg" alt="">
+                  <span>Ao gerar o Código Pix do pedido você pode pagar escaneando o <strong>QR Code</strong> ou <strong>Copiar</strong> e <strong>Colar</strong>.</span>
+                </div>
+                <div class="pix-info"><span>Nome</span><span><strong>Daniel Ferreira</strong></span><br>
+                  <span>CPF/CNPJ</span><span><strong>000.000.000-00</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="form-01 font-2-g">
+            <p class="cor-s2">Novo por aqui? Me conta onde nos conheceu! Se já conquistamos seu coração, manda sua sugestão ou algo que quer que a gente faça!</p>
+            <textarea class="input-form-01 sugestao" rows="6" name="mensagem" id="mensagem"></textarea>
+          </div>
+          <div class="check-entrega font-2-g">
+            <input type="checkbox"><span>Salvar dados para <strong>comprar mais rápido</strong>.</span>
+          </div>
+        </div>
+        <div class="cel-envio font-2-g">
+          <p>Celular para envio de SMS</p>
+          <div class="question-c">
+            <img class="question" src="/img/entrega/question.svg" alt="">
+            <p class="popup-c">Lorem ipsum dolor sit amet, consectetur tempor incididunt. </p>
+          </div>
+          <div class="input-line">
+            <input class="input-form-01" id="tel" name="tel" type="number" placeholder="Número de telefone">
+          </div>
+        </div>
+        <a class="button" href="/finalizacao/finalizar-compra.html">Fazer pedido</a>
+        <ul class="list-end-entrega font-2-m">
+          <li><a href="/termos/politica-de-troca.html">Política de Trocas e Devoluções</a></li>
+          <li><a href="/termos/politica-de-entrega.html">Política de Entrega</a></li>
+          <li><a href="/termos/termos-uso.html">Termos de uso</a></li>
+        </ul>
+
+      </section>
+
+      <section class="item-final-compra">
+        <h2 class="font-1-m1 cor-s2">Detalhes do pedido</h2>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img class="final-item-img" src="/img/carrinho/jaqueta.png" alt="">
+          </div>
+          <img class="quantidade" src="/img/entrega/Group54.svg" alt="">
+          <div class="product-card-infos">
+            <h3 class="font-1-g1">Jaqueta - Kyyyoto</h3>
+            <div class="size-price">
+              <span class="font-2-g1">GG</span>
+              <span class="price font-2-g1">R$ 140,00</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img class="final-item-img" src="/img/carrinho/postal-tanjiro.png" alt="">
+          </div>
+          <img class="quantidade" src="/img/entrega/Group54.svg" alt="">
+          <div class="product-card-infos">
+            <h3 class="font-1-g1">Postal - Tanjiro</h3>
+            <div class="size-price font-2-g1">
+              <span class="font-2-g1">GG</span>
+              <span class="price font-2-g1">R$ 0,00</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="finalizacao">
+          <div class="size-price font-2-g1">
+            <span class="price">Subtotal:</span>
+            <span>R$ 140,00</span>
+          </div>
+          <div class="size-price font-2-g1">
+            <span class="price">Custo de frete:</span>
+            <span>R$ 25,00</span>
+          </div>
+        </div>
+        <div class="size-price">
+          <span class="price font-2-g1">TOTAL:</span>
+          <span class="price-2 font-2-xl">R$ 165,00</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+
+
+  <footer id="footer">
+    <div class="footer-container">
+      <a class="logo-footer-clique" href="/index.html"> <img class="logo-footer" src="/img/logo/logo-verde.svg" alt=""></a>
+      <div class="infos-footer">
+        <div class="listas">
+          <div class="list-1">
+            <h3 class="list-titulo font-1-m1">Categorias</h3>
+            <ul class="footer-list font-2-m">
+              <li><a href="/new-collection/camisas.html">Camisas</a></li>
+              <li><a href="/new-collection/moletom.html">Jaquetas</a></li>
+              <li><a href="/new-collection/prints.html">Diversos</a></li>
+              <li><a href="/new-collection/new-collection.html">Lançamento</a></li>
+            </ul>
+          </div>
+          <div class="list-2">
+            <h3 class="list-titulo font-1-m1">informações</h3>
+            <ul class="footer-list font-2-m">
+              <li><a href="/termos/como-cuidar.html">Como cuidar da sua peça</a></li>
+              <li><a href="/termos/como-medir.html">Como medir</a></li>
+              <li><a href="/termos/politica-de-troca.html">Política de Troca & Devolução</a></li>
+              <li><a href="/termos/politica-de-entrega.html">Política de entrega</a></li>
+              <li><a href="/termos/termos-uso.html">Termos de uso</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-list font-2-g">
+          <p>At vero eos et accusamus et iusto odio dignis ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati Et harum quidem rerum tempore.</p>
+
+          <ul class="icones-contato">
+            <li><a href="/"><img src="/img/icones/Whtsapp.svg" alt="Whatsapp"></a></li>
+            <li><a href="https://www.instagram.com/dardariel/"><img src="/img/icones/Instagram.svg" alt="Instagram"></a></li>
+            <li><a href="/"><img src="/img/icones/Email.svg" alt="Email"></a></li>
+            <li><a href="/"><img src="/img/icones/Pin.svg" alt="Pinterest"></a></li>
+            <li><a href="/"><img src="/img/icones/Facebook.svg" alt="Facebook"></a></li>
+          </ul>
+        </div>
+        <div class="email">
+          <h3 class="list-titulo font-1-m1">receba atualizações</h3>
+          <div class="email-input">
+            <input class="input" type="text" />
+            <a class=button href="/">inscrever</a>
+          </div>
+          <img class="phanter" src="/img/footer/phanter.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="/js/select-open.js"></script>
+  <script src="/js/select-drop.js"></script>
+</body>
+
+</html>

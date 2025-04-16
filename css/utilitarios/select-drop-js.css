@@ -1,0 +1,88 @@
+.custom-select {
+  position: relative;
+  max-width: 400px;
+  color: var(--cor-05);
+  flex: 1;
+}
+
+.select-button {
+  width: 100%;
+  background-color: var(--cor-02);
+  padding: 12px;
+  border: 1px solid var(--cor-06);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pad-01 {
+  padding-right: 40px;
+}
+
+.custom-select img {
+  width: 16px;
+}
+.img {
+  transition: transform ease-in-out 0.3s;
+}
+
+.select-dropdown {
+  position: absolute;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  background-color: var(--cor-02);
+  border: 1px solid var(--cor-06);
+  border-radius: 4px;
+  transition: 0.5s ease;
+  scrollbar-width: none;
+  padding: 0;
+
+  /* transform: scaleY(0); */
+  /* opacity: 0;
+  visibility: hidden; */
+  display: none;
+}
+
+.select-dropdown li {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--cor-12);
+}
+
+.select-dropdown li label {
+  width: 100%;
+  padding: 8px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.select-dropdown li:hover {
+  background-color: var(--cor-03);
+}
+.select-dropdown input:checked ~ label {
+  background-color: var(--cor-p2);
+}
+
+.select-dropdown input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+/* interactivity */
+
+.custom-select.active .img {
+  transform: rotate(180deg);
+}
+
+.custom-select.active .select-dropdown {
+  display: block;
+  transform: scaleY(1);
+  z-index: 1;
+}

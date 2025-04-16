@@ -1,0 +1,114 @@
+.open-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  background: none;
+}
+
+.open-option:not(.pag-selecionar .open-option) {
+  width: 100%;
+}
+.envio-title {
+  color: var(--cor-12);
+  letter-spacing: 0.5px !important;
+  width: 100%;
+}
+.open-option img {
+  width: 16px;
+}
+
+.chevron {
+  grid-column: 3;
+  transition: 0.3s ease;
+}
+
+.open-option[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+.select-option-drop .submenu li {
+  color: var(--cor-12);
+  background-color: var(--cor-02);
+  padding: 20px;
+  display: block;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-option-drop .submenu li:hover {
+  background-color: var(--cor-04);
+  transition: 0.3s ease;
+}
+
+.options {
+  display: none;
+}
+.ativo {
+  display: block;
+}
+
+.select-option-drop .open-option {
+  margin-bottom: 8px;
+}
+.select-option-drop input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.select-option-drop label {
+  color: var(--cor-11);
+  background-color: var(--cor-02);
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+.select-option-drop label:hover {
+  background-color: var(--cor-03);
+}
+
+.select-option-drop input:checked + label span {
+  display: inline-block;
+}
+.select-option-drop input:checked + label {
+  background-color: var(--cor-p2);
+  color: var(--cor-12);
+  /* quando o input tiver clicado (checked) qualquer label referente a ele terá essas config */
+}
+.select-option-drop label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--cor-12);
+  border-radius: 50%;
+  margin-right: 8px;
+  box-sizing: border-box;
+}
+
+.select-option-drop input:checked + label::before {
+  border-color: var(--cor-09);
+  box-shadow: inset 0 0 0 3px var(--cor-01), inset 0 0 0 5px var(--cor-12);
+}
+
+.pag-selecionar .open-option {
+  border-radius: 8px;
+  border: var(--cor-10) solid 1px;
+  margin-bottom: 0px;
+  margin-top: 12px;
+  padding: 20px;
+}
+
+.pag-selecionar .envio-title {
+  color: var(--cor-01);
+  letter-spacing: 0.5px !important;
+  width: 100%;
+}

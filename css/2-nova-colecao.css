@@ -1,0 +1,94 @@
+.nova-colecao {
+  background-image: url("/img/background-1.svg");
+  padding: 40px 0px;
+}
+.banner-1 {
+  display: grid;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 200px;
+  place-items: center;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  background-image: url("/img/banners/banner-1.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.background:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  filter: blur(2px);
+}
+
+.botao-nova {
+  color: var(--cor-01);
+  align-self: end;
+  position: absolute;
+  top: 50%;
+}
+.botao-nova:hover {
+  letter-spacing: 8px;
+  transition: 0.3s;
+}
+.prevenda {
+  color: var(--cor-01);
+  position: relative;
+  position: absolute;
+  bottom: 20%;
+}
+.prevenda:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--cor-s2);
+  bottom: -8px;
+  position: absolute;
+}
+.prevenda:hover {
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+@media (max-width: 1250px) {
+  .banner-1 {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 900px) {
+  .banner-1 {
+    height: 140px;
+  }
+  .nova-colecao {
+    padding: 20px 0px;
+  }
+  .botao-nova {
+    bottom: 30%;
+  }
+  .prevenda {
+    bottom: 15%;
+  }
+}
+@media (max-width: 550px) {
+  .nova-colecao {
+    padding: 0px;
+  }
+  .banner-1 {
+    margin: 0px;
+    border-radius: 0px;
+    height: 100px;
+  }
+  .botao-nova {
+    bottom: 40%;
+  }
+  .prevenda {
+    bottom: 20%;
+  }
+}

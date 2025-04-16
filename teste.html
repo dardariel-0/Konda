@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav class="header-container">
+      <ul class="header-list-1">
+        <li>
+          <div class="dropdown">
+            <a class="link-title font-1-m" href="/">produtos</a>
+            <div class="dropdown-content">
+              <ul class="dropdown-list font-1-pp">
+                <li><a href="/new-collection/camisas.html">Camisas</a></li>
+                <li><a href="/new-collection/moletom.html">Jaquetas</a></li>
+                <li><a href="/new-collection/prints.html">Prints</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a class="link-title font-1-m" href="/">Lançamentos</a>
+            <div class="dropdown-content">
+              <ul class="dropdown-list font-1-pp">
+                <li><a href="/new-collection/new-collection.html">Drop My Hero Academy</a></li>
+                <li><a href="/error/error.html">Drop Claymore</a></li>
+
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <label class="sidebar-produtos">
+        <input type="checkbox">
+        <div class="toggle">
+          <span class="top-line common"></span>
+          <span class="mid-line common"></span>
+          <span class="bot-line common"></span>
+        </div>
+        <div class="slide">
+          <div> <input id="check01" type="checkbox" name="menu" />
+            <label class="toggle-title font-1-m1-b" for="check01">produtos
+            </label>
+            <ul class="submenu font-1-m1">
+              <li><a href="/new-collection/camisas.html">Camisas</a></li>
+              <li><a href="/new-collection/moletom.html">Jaquetas</a></li>
+
+              <li><a href="/new-collection/prints.html">Prints</a></li>
+            </ul>
+          </div>
+          <div> <input id="check02" type="checkbox" name="menu" />
+            <label class="toggle-title-2 font-1-m1-b" for="check02">lançamentos
+            </label>
+            <ul class="submenu font-1-m1">
+              <li><a href="/new-collection/new-collection.html">Drop My Hero Academy</a></li>
+              <li><a href="/error/error.html">Drop Claymore</a></li>
+
+            </ul>
+          </div>
+
+        </div>
+      </label>
+      <a class="logo" href="/index.html">
+        <img class="logo-img" src="./img/logo/logo.svg" alt="Konda Logo">
+      </a>
+      <ul class="header-list-2">
+        <li><a href="/login/login.html" "><img src=" ./img/icones/icon-perfil.svg" alt="Perfil"></a></li>
+
+        <li>
+          <div class="carrinho">
+            <input type="checkbox" id="check-car" class="close-car-button">
+            <input type="checkbox" id="checkbox-car" name="car">
+            <label for="check-car" class="icon-carrinho"><img src="./img/icones/icon-carrinho.svg" alt=""></label>
+
+            <div class="slide-carrinho">
+              <input type="checkbox" id="check-car" class="close-car-button">
+              <label for="check-car">
+                <div class="toggle-car">
+                  <span class="top-line common"></span>
+                  <span class="bot-line common"></span>
+                </div>
+              </label>
+              <h2 class="title-car font-1-m1">seu carrinho</h2>
+              <div class="product-card">
+                <div class="product-card-img">
+                  <img src="./img/carrinho/jaqueta.png" alt="">
+                </div>
+                <div class="product-card-infos">
+                  <h3 class="font-2-gg">Jaqueta - Kyyyoto</h3>
+                  <div class="counter-card">
+                    <div class="btn">+</div>
+                    <div class="count">1</div>
+                    <div class="btn">-</div>
+                  </div>
+                  <span class="price font-2-g1">R$ 140,00</span>
+                  <a class="font-2-g" href="#">Remover</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-card-img">
+                  <img src="./img/carrinho/postal-tanjiro.png" alt="">
+                </div>
+                <div class="product-card-infos">
+                  <h3 class="font-2-gg">Brinde - Postal Tanjiro</h3>
+                  <div class="counter-card">
+                    <div class="btn">+</div>
+                    <div class="count">1</div>
+                    <div class="btn">-</div>
+                  </div>
+                  <span class="price font-2-g1">R$ 0,00</span>
+                  <a class="font-2-g" href="#">Remover</a>
+                </div>
+              </div>
+
+              <div class="comprar">
+                <span class="aviso-frete font-2-g1-b">Frete Grátis em compras a partir de R$ 250,00</span>
+                <div class="subtotal">
+                  <p class="font-2-g">Subtotal (sem frete):</p>
+                  <span class="font-2-gg">R$ 140,00</span>
+                </div>
+
+
+                <div class="select-option-drop">
+                  <button class="open-option" aria-expanded="false" aria-controls="open1">
+                    <img src="/img/icones/envio.svg" alt="">
+                    <span class="envio-title font-1-m">formas de envio</span>
+                    <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
+                  </button>
+
+                  <div id="open1" class="options">
+                    <input type="radio" id="sedex" name="tipo" value="sedex">
+                    <label for="sedex" class="font-2-g">
+                      <p>Sedex</p> <span>R$19,90</span>
+                    </label>
+
+                    <input type="radio" id="correios" name="tipo" value="correios">
+                    <label for="correios" class="font-2-g">
+                      <p>Correios</p> <span>R$29,90</span>
+                    </label>
+                  </div>
+
+                </div>
+
+                <div class="cep">
+                  <input class="input-cep input-form-01" type="number" placeholder="CEP">
+                  <a class="font-2-g" href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" rel="noopener noreferrer">Não sei meu CEP</a>
+                </div>
+                <div class="total">
+                  <span class="font-1-g1">TOTAL:</span>
+                  <div>
+                    <p class="price-total font-2-xl">R$ 140,00</p>
+                    <p class="parcelamento font-2-g">ou até <strong>12x</strong> de <strong>R$14,00</strong></p>
+                  </div>
+                </div>
+                <!-- <input class="button" type="submit" value="Iniciar Compra" id=""> -->
+                <a class="button" href="/entrega/entrega.html">iniciar compra</a>
+                <a class="mais-produtos font-2-g" href="/new-collection/new-collection.html">Ver mais produtos</a>
+              </div>
+            </div>
+
+            </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  </div>
+
+</body>
+
+</html>
